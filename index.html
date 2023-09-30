@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/index.css" />
+  </head>
+  <body>
+    <div id="main">
+      <button id="btn" onclick="change()">CHANGE</button>
+    </div>
+
+    <script>
+      // $(document).ready(() => {
+        let flag = "0";
+        function change() {
+          if (flag === "0") {
+            $("#main").css({ "background-color": "black" });
+            $("#btn").css({ "background-color": "white", color: "black" });
+            flag = "1";
+          } else {
+            $("#main").css({ "background-color": "white" });
+            $("#btn").css({ "background-color": "black", color: "white" });
+            flag = "0";
+          }
+        }
+      // });
+    </script>
+    <script src="./js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="./js/custom.js"></script>
+  </body>
+</html>
