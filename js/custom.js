@@ -10,7 +10,7 @@ let flag = "0";
             $("#seventh").css({ "background-color": "black" });
             $("#eighth").css({ "background-color": "black" });
             $("#ninth").css({ "background-color": "black" });
-            $("#btn").css({ "background-color": "black", color: "white" });
+            $("#btn").css({ "background-color": "white", color: "black" });
             flag = "1";
           } else if(flag==="1") {
             $("#first").css({ "background-color": "black" });
